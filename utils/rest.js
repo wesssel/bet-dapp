@@ -14,3 +14,9 @@ export function getFixturesByDate(date) {
     .get(`${API_FOOTBALL_URL}/fixtures/date/${dateYearMonthDay}`, config)
     .then(result => result.data.api)
 }
+
+export function getFixtureOdds(fixtureId) {
+  return axios
+    .get(`${API_FOOTBALL_URL}/odds/${fixtureId}`, config)
+    .then(result => result.data.api)
+}

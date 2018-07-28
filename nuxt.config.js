@@ -1,4 +1,7 @@
+const dummy = true
+
 module.exports = {
+  env: { dummy },
   head: {
     title: 'Betting Dapp',
     meta: [

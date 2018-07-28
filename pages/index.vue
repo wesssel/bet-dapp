@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  // import { getFixturesByDate } from '../utils/rest'
+  import { getFixturesByDate } from '../utils/rest'
   import fixturesMock from '../data/fixtures-mock.json'
   import Fixture from '../components/Fixture.vue'
 
@@ -37,12 +37,15 @@
         ))
       },
     },
-    // asyncData() {
-    //   const now = new Date()
-    //
-    //   return getFixturesByDate(now)
-    //     .then(result => ({ fixtures: result.fixtures }))
-    // },
+    asyncData() {
+      if (process.env.dummy) {
+        return {}
+      }
+      const now = new Date()
+
+      return getFixturesByDate(now)
+        .then(result => ({ fixtures: Object.values(result.fixtures) }))
+    },
   }
 
 </script>
