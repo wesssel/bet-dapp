@@ -5,7 +5,7 @@
         <fixture-info :fixture="fixture"></fixture-info>
       </div>
       <div class="column is-5">
-        <fixture-odds :fixture="fixture"></fixture-odds>
+        <fixture-odds v-if="showOdds" :fixture="fixture"></fixture-odds>
       </div>
     </div>
   </section>
@@ -22,6 +22,11 @@
     props: {
       fixture: {
         type: Object,
+      },
+    },
+    computed: {
+      showOdds() {
+        return this.fixture.status !== 'Match Finished' && this.fixture.odds
       },
     },
   }

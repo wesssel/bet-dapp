@@ -1,9 +1,15 @@
 export function transformOdds(rawOdds) {
+  const matchWin = rawOdds['Win the match']
+
+  if (!matchWin) {
+    return null
+  }
+
   return {
     matchWin: {
-      home: parseFloat(rawOdds['Win the match']['1'].odd),
-      draw: parseFloat(rawOdds['Win the match'].N.odd),
-      away: parseFloat(rawOdds['Win the match']['2'].odd),
+      home: parseFloat(matchWin['1'].odd),
+      draw: parseFloat(matchWin.N.odd),
+      away: parseFloat(matchWin['2'].odd),
     },
   }
 }

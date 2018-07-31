@@ -12,7 +12,7 @@ export function getFixturesByDate(date) {
   const dateYearMonthDay = date.toISOString().substring(0, 10)
 
   return axios
-    .get(`${API_FOOTBALL_URL}/fixtures/date/${dateYearMonthDay}`, config)
+    .get(`${API_FOOTBALL_URL}/fixtures/date/${'2018-08-01' || dateYearMonthDay}`, config)
     .then((result) => {
       logger({ fixtures: result.data.api.fixtures }, 'get fixture')
       return result.data.api.fixtures

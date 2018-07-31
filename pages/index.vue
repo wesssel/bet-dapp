@@ -7,7 +7,8 @@
       <h2 class="subtitle">
         Decentralizer Application for betting
       </h2>
-      <ul>
+      <strong>All football matches of Today</strong>
+      <ul class="fixtures">
         <li v-for="(fixture, index) in fixturesByDate" :key="index">
           <fixture :fixture="fixture"></fixture>
         </li>
@@ -40,3 +41,9 @@
   }
 
 </script>
+
+<style>
+  .fixtures {
+    margin: 20px 0;
+  }
+</style>

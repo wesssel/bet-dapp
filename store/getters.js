@@ -11,11 +11,11 @@ export default {
   },
 
   totalOdds(state, getters) {
-    let total = 0
-    getters.betFixtures.forEach((bf) => {
-      total += bf.fixture.odds.matchWin[bf.bet.side]
-    })
-    return total
+    return getters.betFixtures.reduce((a, bf) => {
+      const odds = bf.fixture.odds.matchWin[bf.bet.side]
+
+      return odds * a
+    }, 1)
   },
 
   totalPotential(state, getters) {

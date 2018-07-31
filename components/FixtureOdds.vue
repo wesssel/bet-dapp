@@ -8,17 +8,17 @@
     <div class="buttons is-pulled-right" v-else key="is-loaded">
       <template v-if="matchWinOdds">
         <button @click="setMatchWinBet('home')"
-                 class="button is-large" :class="isBet('home') ? 'is-success' : 'is-warning'"
+                class="button is-large" :class="isBet('home') ? 'is-success' : 'is-warning'"
                 type="button">
           {{ matchWinOdds.home | twoDigits }}
         </button>
         <button @click="setMatchWinBet('draw')"
-                 class="button is-large" :class="isBet('draw') ? 'is-success' : 'is-warning'"
+                class="button is-large" :class="isBet('draw') ? 'is-success' : 'is-warning'"
                 type="button">
           {{ matchWinOdds.draw | twoDigits }}
         </button>
         <button @click="setMatchWinBet('away')"
-                 class="button is-large" :class="isBet('away') ? 'is-success' : 'is-warning'"
+                class="button is-large" :class="isBet('away') ? 'is-success' : 'is-warning'"
                 type="button">
           {{ matchWinOdds.away | twoDigits }}
         </button>
@@ -58,8 +58,13 @@
       },
       isBet(side) {
         const { bets } = this.$store.state
+        const currentBet = bets.find(b => b.fixtureId === this.fixture.id)
 
-        return bets.find(b => b.side === side) && bets.find(b => b.fixtureId === this.fixture.id)
+        if (!currentBet) {
+          return false
+        }
+
+        return currentBet.fixtureId === this.fixture.id && currentBet.side === side
       },
     },
     filters: {
