@@ -1,4 +1,4 @@
-const dummy = true
+const dummy = false
 
 module.exports = {
   env: { dummy },

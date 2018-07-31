@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { API_FOOTBALL_KEY, API_FOOTBALL_URL } from '../config/api'
+import { logger } from './logger'
 
 const config = {
   headers: {
@@ -12,11 +13,17 @@ export function getFixturesByDate(date) {
 
   return axios
     .get(`${API_FOOTBALL_URL}/fixtures/date/${dateYearMonthDay}`, config)
-    .then(result => result.data.api)
+    .then((result) => {
+      logger({ fixtures: result.data.api.fixtures }, 'get fixture')
+      return result.data.api.fixtures
+    })
 }
 
 export function getFixtureOdds(fixtureId) {
   return axios
     .get(`${API_FOOTBALL_URL}/odds/${fixtureId}`, config)
-    .then(result => result.data.api)
+    .then((result) => {
+      logger({ odds: result.data.api.odds }, `get odds ${fixtureId}`)
+      return result.data.api.odds
+    })
 }

@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  import { getFixturesByDate } from '../utils/rest'
   import fixturesMock from '../data/fixtures-mock.json'
   import Fixture from '../components/Fixture.vue'
 
@@ -30,21 +29,8 @@
     },
     computed: {
       fixturesByDate() {
-        const { fixtures } = this
-
-        return fixtures.sort((a, b) => (
-          a.event_timestamp - b.event_timestamp
-        ))
+        return this.$store.getters.fixturesByDate
       },
-    },
-    asyncData() {
-      if (process.env.dummy) {
-        return {}
-      }
-      const now = new Date()
-
-      return getFixturesByDate(now)
-        .then(result => ({ fixtures: Object.values(result.fixtures) }))
     },
   }
 

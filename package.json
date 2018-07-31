@@ -15,7 +15,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -26,6 +27,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.9.2",
-    "sass-loader": "^7.0.3"
+    "sass-loader": "^7.0.3",
+    "webpack": "4"
   }
 }

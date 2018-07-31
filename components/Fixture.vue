@@ -5,7 +5,7 @@
         <fixture-info :fixture="fixture"></fixture-info>
       </div>
       <div class="column is-5">
-        <fixture-odds :fixtureId="fixture.fixture_id"></fixture-odds>
+        <fixture-odds :fixture="fixture"></fixture-odds>
       </div>
     </div>
   </section>

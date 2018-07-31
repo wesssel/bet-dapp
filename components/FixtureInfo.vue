@@ -1,16 +1,16 @@
 <template>
   <div class="columns">
     <div class="column is-7">
-      {{fixture.homeTeam}}<br>{{fixture.awayTeam}}
+      {{fixture.home.team}}<br>{{fixture.away.team}}
     </div>
     <div class="column is-3">
-      <div v-if="fixture.goalsHomeTeam && fixture.goalsAwayTeam" key="has-score">
+      <div v-if="fixture.home.goals && fixture.away.goals" key="has-score">
         <strong class="tag is-success">
-          {{fixture.goalsHomeTeam}}
+          {{fixture.home.goals}}
         </strong>
         <br>
         <strong class="tag is-success">
-          {{fixture.goalsAwayTeam}}
+          {{fixture.away.goals}}
         </strong>
       </div>
       <span v-else key="has-no-score">{{fixture.status}}</span>
@@ -18,7 +18,7 @@
     <div class="column is-2">
       <span v-if="isFinished" key="match-is-over">{{fixture.status}}</span>
       <span v-else-if="fixture.elapsed > 0" key="match-is-now">{{fixture.elapsed}}min</span>
-      <span v-else key="match-is-upcoming">{{fixture.event_timestamp | formatDate}}</span>
+      <span v-else key="match-is-upcoming">{{fixture.timestamp | formatDate}}</span>
     </div>
   </div>
 </template>
@@ -44,6 +44,7 @@
       },
     },
   }
+
 </script>
 
 <style>

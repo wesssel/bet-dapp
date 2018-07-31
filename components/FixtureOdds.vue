@@ -5,52 +5,43 @@
     <small>Loading Odds</small>
   </div>
   <div class="buttons is-pulled-right" v-else key="is-loaded">
-    <button type="button" class="button is-large is-warning">
-      {{ matchWinOdds['1'].odd }}
-    </button>
-    <button type="button" class="button is-large is-warning">
-      {{ matchWinOdds['N'].odd }}
-    </button>
-    <button type="button" class="button is-large is-warning">
-      {{ matchWinOdds['2'].odd }}
-    </button>
+    <template v-if="matchWinOdds">
+      <button type="button" class="button is-large is-warning">
+        {{ matchWinOdds.home }}
+      </button>
+      <button type="button" class="button is-large is-warning">
+        {{ matchWinOdds.draw }}
+      </button>
+      <button type="button" class="button is-large is-warning">
+        {{ matchWinOdds.away }}
+      </button>
+    </template>
   </div>
 
 </template>
 
 <script>
-  import { getFixtureOdds } from '../utils/rest'
-  import oddsMock from '../data/odds-mock.json'
-
   export default {
     name: 'fixture-odds',
     props: {
-      fixtureId: {
-        type: String,
+      fixture: {
+        type: Object,
       },
     },
     data() {
       return {
-        odds: {},
         isLoading: true,
       }
     },
     computed: {
       matchWinOdds() {
-        return this.odds['Win the match']
+        return this.fixture.odds.matchWin
       },
     },
     created() {
-      if (process.env.dummy) {
-        this.isLoading = false
-        this.odds = oddsMock.api.odds
-        return
-      }
-
-      getFixtureOdds(this.fixtureId)
-        .then((result) => {
+      this.$store.dispatch('LOAD_FIXTURE_ODS', { fixtureId: this.fixture.id })
+        .then(() => {
           this.isLoading = false
-          this.odds = result.odds
         })
     },
   }
