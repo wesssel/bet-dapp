@@ -1,22 +1,30 @@
 <template>
-  <div class="spinner" v-if="isLoading" key="is-loading">
-    <img class="spinner__icon" src="~/assets/loading.svg" alt="loading">
-    <br>
-    <small>Loading Odds</small>
-  </div>
-  <div class="buttons is-pulled-right" v-else key="is-loaded">
-    <template v-if="matchWinOdds">
-      <button type="button" class="button is-large is-warning">
-        {{ matchWinOdds.home }}
-      </button>
-      <button type="button" class="button is-large is-warning">
-        {{ matchWinOdds.draw }}
-      </button>
-      <button type="button" class="button is-large is-warning">
-        {{ matchWinOdds.away }}
-      </button>
-    </template>
-  </div>
+  <transition name="fade">
+    <div class="spinner" v-if="isLoading" key="is-loading">
+      <img class="spinner__icon" src="~/assets/loading.svg" alt="loading">
+      <br>
+      <small>Loading Odds</small>
+    </div>
+    <div class="buttons is-pulled-right" v-else key="is-loaded">
+      <template v-if="matchWinOdds">
+        <button @click="setMatchWinBet('home')"
+                 class="button is-large" :class="isBet('home') ? 'is-success' : 'is-warning'"
+                type="button">
+          {{ matchWinOdds.home | twoDigits }}
+        </button>
+        <button @click="setMatchWinBet('draw')"
+                 class="button is-large" :class="isBet('draw') ? 'is-success' : 'is-warning'"
+                type="button">
+          {{ matchWinOdds.draw | twoDigits }}
+        </button>
+        <button @click="setMatchWinBet('away')"
+                 class="button is-large" :class="isBet('away') ? 'is-success' : 'is-warning'"
+                type="button">
+          {{ matchWinOdds.away | twoDigits }}
+        </button>
+      </template>
+    </div>
+  </transition>
 
 </template>
 
@@ -43,6 +51,21 @@
         .then(() => {
           this.isLoading = false
         })
+    },
+    methods: {
+      setMatchWinBet(side) {
+        this.$store.commit('ADD_BET', { fixtureId: this.fixture.id, side })
+      },
+      isBet(side) {
+        const { bets } = this.$store.state
+
+        return bets.find(b => b.side === side) && bets.find(b => b.fixtureId === this.fixture.id)
+      },
+    },
+    filters: {
+      twoDigits(val) {
+        return val.toFixed(2)
+      },
     },
   }
 </script>

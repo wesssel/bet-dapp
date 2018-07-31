@@ -3,10 +3,6 @@ import { transformFixtures } from '../transformers/fixture'
 import { transformOdds } from '../transformers/odds'
 
 export default {
-  async nuxtServerInit({ dispatch }) {
-    await dispatch('LOAD_FIXTURES_OF_TODAY')
-  },
-
   LOAD_FIXTURES_OF_TODAY({ commit }) {
     const now = new Date()
 
