@@ -15,6 +15,7 @@ module.exports = {
   },
   loading: { color: '#3B8070' },
   build: {
+    vendor: ['web3'],
     postcss: {
       plugins: {
         'postcss-custom-properties': false,

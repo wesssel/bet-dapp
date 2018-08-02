@@ -21,4 +21,8 @@ export default {
   totalPotential(state, getters) {
     return state.betAmount * getters.totalOdds
   },
+
+  maxStakeEther(state, getters) {
+    return getters.mainAccountBalanceEther / getters.totalOdds
+  },
 }

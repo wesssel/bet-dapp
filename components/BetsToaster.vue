@@ -7,7 +7,11 @@
           <hr>
         </li>
       </ul>
-      <input class="input" type="number" step="0.01" v-model="betAmount" placeholder="Bet Amount">
+      <input class="input" type="number" step="0.01" v-model="betAmount"
+             min="0" :max="maxStakeEther" placeholder="Enter stake">
+      <span class="has-text-danger">
+        Max stake possible: {{maxStakeEther}}
+      </span>
       <ul class="overview">
         <li>
           Total Stake:
@@ -40,6 +44,11 @@
     },
     watch: {
       betAmount(betAmount) {
+        if (betAmount > this.maxStakeEther) {
+          this.betAmount = this.maxStakeEther
+          return
+        }
+
         this.$store.commit('SET_BET_AMOUNT', { betAmount })
       },
     },
@@ -49,6 +58,9 @@
       },
       betFixtures() {
         return this.$store.getters.betFixtures
+      },
+      maxStakeEther() {
+        return this.$store.getters.maxStakeEther
       },
     },
     filters: {
