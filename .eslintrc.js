@@ -22,4 +22,7 @@ module.exports = {
       'baseIndent': 1
     }],
   },
+  globals: {
+    artifacts: true,
+  },
 }
