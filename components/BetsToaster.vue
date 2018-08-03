@@ -1,7 +1,7 @@
 <template>
   <div class="toaster box" :class="{ active: isActive }">
     <form>
-      <ul>
+      <ul class="toaster__bets">
         <li v-for="betFixture in betFixtures" :key="betFixture.fixture.id">
           <bet :fixture="betFixture.fixture" :bet="betFixture.bet"></bet>
           <hr>
@@ -86,6 +86,12 @@
 
   .toaster.active {
     bottom: 0;
+  }
+
+  .toaster__bets {
+    max-height: 340px;
+    overflow: hidden;
+    overflow-y: auto;
   }
 
   .overview {
