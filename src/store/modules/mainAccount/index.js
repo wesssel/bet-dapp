@@ -1,5 +1,5 @@
 import truffleContract from 'truffle-contract'
-import MainAccount from '../../../build/contracts/MainAccount.json'
+import MainAccount from '../../../../build/contracts/MainAccount.json'
 
 export default {
   state: {

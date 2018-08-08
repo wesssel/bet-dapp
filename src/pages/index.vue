@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import fixturesMock from '../data/fixtures-mock.json'
+  import fixturesMock from '../../data/fixtures-mock.json'
   import BetsToaster from '../components/BetsToaster.vue'
   import Fixture from '../components/Fixture.vue'
 

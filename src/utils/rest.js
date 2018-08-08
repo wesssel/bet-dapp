@@ -2,8 +2,8 @@ import axios from 'axios'
 import { API_FOOTBALL_KEY, API_FOOTBALL_URL } from '../config/api'
 import { logger } from './logger'
 
-import fixturesMock from '../data/fixtures-mock.json'
-import oddsMock from '../data/odds-mock.json'
+import fixturesMock from '../../data/fixtures-mock.json'
+import oddsMock from '../../data/odds-mock.json'
 
 const config = {
   headers: {

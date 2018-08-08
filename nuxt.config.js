@@ -1,6 +1,8 @@
 const dummy = true
 
 module.exports = {
+  mode: 'spa',
+  srcDir: 'src/',
   env: { dummy },
   head: {
     title: 'Betting Dapp',
@@ -14,6 +16,9 @@ module.exports = {
     ],
   },
   loading: { color: '#3B8070' },
+  plugins: [
+    '~/plugins/web3.js',
+  ],
   build: {
     vendor: ['web3'],
     postcss: {
