@@ -1,6 +1,9 @@
 <template>
   <div class="toaster box" :class="{ active: isActive }">
-    <form>
+    <span @click="isMinimized = !isMinimized" class="minimize tag is-rounded">
+      {{ isMinimized ? '+' : '-'  }}
+    </span>
+    <form v-if="!isMinimized">
       <ul class="toaster__bets">
         <li v-for="betFixture in betFixtures" :key="betFixture.fixture.id">
           <bet :fixture="betFixture.fixture" :bet="betFixture.bet"></bet>
@@ -28,6 +31,9 @@
       </ul>
       <button class="button is-success is-pulled-right">PLACE BET</button>
     </form>
+    <span v-else>
+      {{betFixtures.length}} Bet(s) placed
+    </span>
   </div>
 </template>
 
@@ -40,6 +46,7 @@
     data() {
       return {
         betAmount: null,
+        isMinimized: false,
       }
     },
     watch: {
@@ -96,5 +103,13 @@
 
   .overview {
     margin: 20px 0;
+  }
+
+  .minimize {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-weight: bold;
+    cursor: pointer;
   }
 </style>

@@ -47,6 +47,6 @@
 
 <style>
   .fixtures {
-    margin: 20px 0;
+    margin: 20px 0 120px;
   }
 </style>

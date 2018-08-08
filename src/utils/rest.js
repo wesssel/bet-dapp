@@ -21,7 +21,7 @@ export function getFixturesByDate(date) {
   }
 
   return axios
-    .get(`${API_FOOTBALL_URL}/fixtures/date/${'2018-08-01' || dateYearMonthDay}`, config)
+    .get(`${API_FOOTBALL_URL}/fixtures/date/${dateYearMonthDay}`, config)
     .then((result) => {
       logger({ fixtures: result.data.api.fixtures }, 'get fixture')
       return result.data.api.fixtures
