@@ -1,33 +1,28 @@
 import truffleContract from 'truffle-contract'
-import MainAccount from '../../../../build/contracts/MainAccount.json'
+import MainAccount from '../../../build/contracts/MainAccount.json'
+import { logger } from '../../utils/logger'
+
+const contract = truffleContract(MainAccount)
 
 export default {
   state: {
-    contract: {},
     balance: null,
   },
   actions: {
-    LOAD_MAIN_ACCOUNT_BALANCE({ commit, dispatch }) {
-      commit('SET_CONTRACT', { contract: truffleContract(MainAccount) })
-      dispatch('SET_CONTRACT_PROVIDER')
-      dispatch('SET_BALANCE')
-    },
-    SET_CONTRACT_PROVIDER({ state }) {
-      state.contract.setProvider(window.web3.currentProvider)
-    },
-    SET_BALANCE({ commit, state }) {
-      state.contract
+    async LOAD_MAIN_ACCOUNT_BALANCE({ commit }) {
+      contract
+        .setProvider(this.$web3.currentProvider)
+
+      contract
         .deployed()
         .then(instance => instance.balanceOfMain.call())
         .then((balance) => {
           commit('SET_MAIN_BALANCE', { balance })
         })
+        .catch(e => logger(e, 'balance error'))
     },
   },
   mutations: {
-    SET_CONTRACT(state, { contract }) {
-      state.contract = contract
-    },
     SET_MAIN_BALANCE(state, { balance }) {
       state.balance = balance
     },

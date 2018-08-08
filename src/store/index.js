@@ -4,7 +4,7 @@ import actions from './actions'
 import getters from './getters'
 import mutations from './mutations'
 import state from './state'
-import mainAccount from './modules/mainAccount'
+import mainAccount from './mainAccount'
 
 const store = {
   actions,
