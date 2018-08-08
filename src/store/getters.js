@@ -10,6 +10,29 @@ export default {
     })) || []
   },
 
+  betFixtureIds(state) {
+    return state.bets.map(b => parseInt(b.fixtureId, 10))
+  },
+
+  betAmount(state) {
+    return state.betAmount
+  },
+
+  betSides(state) {
+    return state.bets.map((bet) => {
+      switch (bet.side) {
+      case 'home':
+        return 1
+      case 'draw':
+        return 2
+      case 'away':
+        return 3
+      default:
+        return null
+      }
+    })
+  },
+
   totalOdds(state, getters) {
     return getters.betFixtures.reduce((a, bf) => {
       const odds = bf.fixture.odds.matchWin[bf.bet.side]

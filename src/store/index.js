@@ -5,6 +5,7 @@ import getters from './getters'
 import mutations from './mutations'
 import state from './state'
 import mainAccount from './mainAccount'
+import bet from './bet'
 
 const store = {
   actions,
@@ -13,6 +14,7 @@ const store = {
   state,
   modules: {
     mainAccount,
+    bet,
   },
 }
 

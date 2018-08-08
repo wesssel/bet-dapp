@@ -3,7 +3,7 @@
     <span @click="isMinimized = !isMinimized" class="minimize tag is-rounded">
       {{ isMinimized ? '+' : '-'  }}
     </span>
-    <form v-if="!isMinimized">
+    <form v-if="!isMinimized" @submit.prevent="addBetSlip">
       <ul class="toaster__bets">
         <li v-for="betFixture in betFixtures" :key="betFixture.fixture.id">
           <bet :fixture="betFixture.fixture" :bet="betFixture.bet"></bet>
@@ -68,6 +68,11 @@
       },
       maxStakeEther() {
         return this.$store.getters.maxStakeEther
+      },
+    },
+    methods: {
+      addBetSlip() {
+        this.$store.dispatch('PUSH_ACTIVE_BET')
       },
     },
     filters: {
