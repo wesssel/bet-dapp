@@ -72,7 +72,7 @@
     },
     methods: {
       addBetSlip() {
-        this.$store.dispatch('PUSH_ACTIVE_BET')
+        this.$store.dispatch('PUSH_BET_SLIP')
       },
     },
     filters: {

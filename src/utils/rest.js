@@ -16,7 +16,7 @@ export function getFixturesByDate(date) {
 
   if (process.env.dummy) {
     return new Promise((resolve) => {
-      resolve(fixturesMock)
+      resolve(fixturesMock[0])
     })
   }
 
@@ -25,6 +25,21 @@ export function getFixturesByDate(date) {
     .then((result) => {
       logger({ fixtures: result.data.api.fixtures }, 'get fixture')
       return result.data.api.fixtures
+    })
+}
+
+export function getFixturesById(id) {
+  if (process.env.dummy) {
+    return new Promise((resolve) => {
+      resolve(fixturesMock)
+    })
+  }
+
+  return axios
+    .get(`${API_FOOTBALL_URL}/fixtures/id/${id}`, config)
+    .then((result) => {
+      logger({ fixture: Object.values(result.data.api.fixtures)[0] }, 'get fixture by id')
+      return Object.values(result.data.api.fixtures)[0]
     })
 }
 

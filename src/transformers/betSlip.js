@@ -9,7 +9,10 @@ export function reverseTransformBetSlip(rawBetSlip) {
     better: rawBetSlip[BETTER_INDEX],
     amount: rawBetSlip[AMOUNT_INDEX].toNumber(),
     odd: rawBetSlip[ODD_INDEX].toNumber(),
-    fixtureIds: rawBetSlip[FIXTURES_INDEX].map(f => f.toNumber()),
-    sides: rawBetSlip[SIDES_INDEX].map(f => f.toNumber()),
+    bets: rawBetSlip[FIXTURES_INDEX].map((fixtureId, index) => ({
+      fixtureId: fixtureId.toNumber(),
+      side: rawBetSlip[SIDES_INDEX][index].toNumber(),
+      fixture: null,
+    })),
   }
 }
