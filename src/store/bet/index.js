@@ -14,7 +14,7 @@ export default {
   },
 
   actions: {
-    async PUSH_BET_SLIP({ getters }) {
+    async PUSH_BET_SLIP({ getters, commit }) {
       contract
         .setProvider(this.$web3.currentProvider)
 
@@ -30,6 +30,8 @@ export default {
           { from: accounts[0] },
         )
         .then((result) => {
+          commit('EMPTY_BETS')
+          commit('SET_MESSAGE', { message: 'Bet has been placed' })
           logger(result, 'bet success')
         })
         .catch(e => logger(e, 'push active bet error'))

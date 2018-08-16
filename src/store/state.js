@@ -3,4 +3,5 @@ export default {
   bets: [],
   betAmount: 0,
   currentAccount: '',
+  message: null,
 }

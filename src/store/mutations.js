@@ -19,11 +19,19 @@ export default {
     state.bets.splice(state.bets.findIndex(b => b.fixtureId === fixtureId), 1)
   },
 
+  EMPTY_BETS(state) {
+    state.bets = []
+  },
+
   SET_BET_AMOUNT(state, { betAmount }) {
     state.betAmount = betAmount
   },
 
   SET_CURRENT_ACCOUNT(state, { currentAccount }) {
     state.currentAccount = currentAccount
+  },
+
+  SET_MESSAGE(state, { message }) {
+    state.message = message
   },
 }

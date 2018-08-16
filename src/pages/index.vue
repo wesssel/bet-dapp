@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <message></message>
     <div>
       <h1 class="title">
         Bet Dapp
@@ -22,9 +23,10 @@
   import fixturesMock from '../../data/fixtures-mock.json'
   import BetsToaster from '../components/BetsToaster.vue'
   import Fixture from '../components/Fixture.vue'
+  import Message from '../components/Message.vue'
 
   export default {
-    components: { BetsToaster, Fixture },
+    components: { BetsToaster, Fixture, Message },
     data() {
       return {
         fixtures: fixturesMock,
