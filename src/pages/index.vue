@@ -8,6 +8,9 @@
       <h2 class="subtitle">
         Decentralizer Application for betting
       </h2>
+      <router-link to="/my-bets" class="is-pulled-right">
+        My Bets
+      </router-link>
       <strong>All football matches of Today</strong>
       <ul class="fixtures">
         <li v-for="(fixture, index) in fixturesByDate" :key="index">

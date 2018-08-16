@@ -56,4 +56,8 @@ export default {
   currentUserIsMainAccount(state, getters) {
     return getters.mainAccount === getters.currentAccount
   },
+
+  currentAccountBetSlips(state, getters) {
+    return getters.betSlips.filter(b => b.better === getters.currentAccount)
+  },
 }
