@@ -1,4 +1,4 @@
-const dummy = false
+const dummy = true
 
 module.exports = {
   mode: 'spa',

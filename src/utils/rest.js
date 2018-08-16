@@ -16,7 +16,7 @@ export function getFixturesByDate(date) {
 
   if (process.env.dummy) {
     return new Promise((resolve) => {
-      resolve(fixturesMock[0])
+      resolve(fixturesMock)
     })
   }
 
@@ -31,7 +31,7 @@ export function getFixturesByDate(date) {
 export function getFixturesById(id) {
   if (process.env.dummy) {
     return new Promise((resolve) => {
-      resolve(fixturesMock)
+      resolve(fixturesMock[0])
     })
   }
 

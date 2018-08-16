@@ -13,9 +13,10 @@ export default {
       contract
         .setProvider(this.$web3.currentProvider)
 
-      contract
-        .deployed()
-        .then(instance => instance.balanceOfMain.call())
+      const instance = await contract.deployed()
+
+      instance.balanceOfMain
+        .call()
         .then((balance) => {
           commit('SET_MAIN_BALANCE', { balance })
         })
