@@ -1,0 +1,549 @@
+{
+  "contractName": "Model",
+  "abi": [],
+  "bytecode": "0x604c602c600b82828239805160001a60731460008114601c57601e565bfe5b5030600052607381538281f30073000000000000000000000000000000000000000030146080604052600080fd00a165627a7a723058207faa8c71d694648e41152b17ee4b3c60b2724b3c92e8cb547daa8f2c516917980029",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fd00a165627a7a723058207faa8c71d694648e41152b17ee4b3c60b2724b3c92e8cb547daa8f2c516917980029",
+  "sourceMap": "26:233:1:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
+  "deployedSourceMap": "26:233:1:-;;;;;;;;",
+  "source": "pragma solidity ^0.4.24;\n\nlibrary Model {\n    struct BetSlip {\n        address better;\n        uint amount;\n        uint odd;\n        uint betsCount;\n        mapping(uint => Bet) bets;\n    }\n\n    struct Bet {\n        uint fixtureId;\n        uint side;\n    }\n}\n",
+  "sourcePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/lib/Model.sol",
+  "ast": {
+    "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/lib/Model.sol",
+    "exportedSymbols": {
+      "Model": [
+        212
+      ]
+    },
+    "id": 213,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 193,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 212,
+        "linearizedBaseContracts": [
+          212
+        ],
+        "name": "Model",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Model.BetSlip",
+            "id": 206,
+            "members": [
+              {
+                "constant": false,
+                "id": 195,
+                "name": "better",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "71:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "71:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 197,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "95:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 196,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "95:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 199,
+                "name": "odd",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "116:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 198,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "116:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 201,
+                "name": "betsCount",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "134:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 200,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "134:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 205,
+                "name": "bets",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "158:25:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$211_storage_$",
+                  "typeString": "mapping(uint256 => struct Model.Bet)"
+                },
+                "typeName": {
+                  "id": 204,
+                  "keyType": {
+                    "id": 202,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "166:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "158:20:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$211_storage_$",
+                    "typeString": "mapping(uint256 => struct Model.Bet)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 203,
+                    "name": "Bet",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 211,
+                    "src": "174:3:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Bet_$211_storage_ptr",
+                      "typeString": "struct Model.Bet"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "BetSlip",
+            "nodeType": "StructDefinition",
+            "scope": 212,
+            "src": "46:144:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Model.Bet",
+            "id": 211,
+            "members": [
+              {
+                "constant": false,
+                "id": 208,
+                "name": "fixtureId",
+                "nodeType": "VariableDeclaration",
+                "scope": 211,
+                "src": "217:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 207,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "217:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 210,
+                "name": "side",
+                "nodeType": "VariableDeclaration",
+                "scope": 211,
+                "src": "241:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 209,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "241:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Bet",
+            "nodeType": "StructDefinition",
+            "scope": 212,
+            "src": "196:61:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 213,
+        "src": "26:233:1"
+      }
+    ],
+    "src": "0:260:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/lib/Model.sol",
+    "exportedSymbols": {
+      "Model": [
+        212
+      ]
+    },
+    "id": 213,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 193,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 212,
+        "linearizedBaseContracts": [
+          212
+        ],
+        "name": "Model",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Model.BetSlip",
+            "id": 206,
+            "members": [
+              {
+                "constant": false,
+                "id": 195,
+                "name": "better",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "71:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "71:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 197,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "95:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 196,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "95:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 199,
+                "name": "odd",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "116:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 198,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "116:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 201,
+                "name": "betsCount",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "134:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 200,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "134:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 205,
+                "name": "bets",
+                "nodeType": "VariableDeclaration",
+                "scope": 206,
+                "src": "158:25:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$211_storage_$",
+                  "typeString": "mapping(uint256 => struct Model.Bet)"
+                },
+                "typeName": {
+                  "id": 204,
+                  "keyType": {
+                    "id": 202,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "166:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "158:20:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$211_storage_$",
+                    "typeString": "mapping(uint256 => struct Model.Bet)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 203,
+                    "name": "Bet",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 211,
+                    "src": "174:3:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Bet_$211_storage_ptr",
+                      "typeString": "struct Model.Bet"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "BetSlip",
+            "nodeType": "StructDefinition",
+            "scope": 212,
+            "src": "46:144:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Model.Bet",
+            "id": 211,
+            "members": [
+              {
+                "constant": false,
+                "id": 208,
+                "name": "fixtureId",
+                "nodeType": "VariableDeclaration",
+                "scope": 211,
+                "src": "217:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 207,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "217:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 210,
+                "name": "side",
+                "nodeType": "VariableDeclaration",
+                "scope": 211,
+                "src": "241:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 209,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "241:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Bet",
+            "nodeType": "StructDefinition",
+            "scope": 212,
+            "src": "196:61:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 213,
+        "src": "26:233:1"
+      }
+    ],
+    "src": "0:260:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-16T13:04:07.697Z"
+}

@@ -32,22 +32,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b5061014a806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630e018e06146100515780631123cfe01461007c575b600080fd5b34801561005d57600080fd5b506100666100d3565b6040518082815260200191505060405180910390f35b34801561008857600080fd5b50610091610106565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe873ffffffffffffffffffffffffffffffffffffffff1631905090565b73726c7f2062bb3dd47f5aae72975a334ba8e60fe8815600a165627a7a72305820a69672b4a558d0806c1b3bfb3e8378b72db22a5fb8a6a21e51b3e58c3887de2c0029",
   "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630e018e06146100515780631123cfe01461007c575b600080fd5b34801561005d57600080fd5b506100666100d3565b6040518082815260200191505060405180910390f35b34801561008857600080fd5b50610091610106565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe873ffffffffffffffffffffffffffffffffffffffff1631905090565b73726c7f2062bb3dd47f5aae72975a334ba8e60fe8815600a165627a7a72305820a69672b4a558d0806c1b3bfb3e8378b72db22a5fb8a6a21e51b3e58c3887de2c0029",
-  "sourceMap": "26:213:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:213:0;;;;;;;",
-  "deployedSourceMap": "26:213:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;140:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:97:0;;;;;;;;;;;;;;;;;;;;;;;53:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:80:0;;;;;;;;;;;;;;;;;;;;;;;;;;;140:97;185:7;91:42;211:19;;;204:26;;140:97;:::o;53:80::-;91:42;53:80;:::o",
+  "sourceMap": "26:213:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:213:1;;;;;;;",
+  "deployedSourceMap": "26:213:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;140:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:97:1;;;;;;;;;;;;;;;;;;;;;;;53:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:80:1;;;;;;;;;;;;;;;;;;;;;;;;;;;140:97;185:7;91:42;211:19;;;204:26;;140:97;:::o;53:80::-;91:42;53:80;:::o",
   "source": "pragma solidity ^0.4.24;\n\ncontract MainAccount {\n    address constant public mainAccount = 0x726C7f2062BB3dD47F5Aae72975A334BA8e60Fe8;\n\n    function balanceOfMain() public view returns(uint256) {\n        return mainAccount.balance;\n    }\n}\n",
   "sourcePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
   "ast": {
     "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
     "exportedSymbols": {
       "MainAccount": [
-        14
+        206
       ]
     },
-    "id": 15,
+    "id": 207,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 193,
         "literals": [
           "solidity",
           "^",
@@ -55,7 +55,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:0"
+        "src": "0:24:1"
       },
       {
         "baseContracts": [],
@@ -63,20 +63,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 14,
+        "id": 206,
         "linearizedBaseContracts": [
-          14
+          206
         ],
         "name": "MainAccount",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 4,
+            "id": 196,
             "name": "mainAccount",
             "nodeType": "VariableDeclaration",
-            "scope": 14,
-            "src": "53:80:0",
+            "scope": 206,
+            "src": "53:80:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -84,10 +84,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2,
+              "id": 194,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "53:7:0",
+              "src": "53:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -96,14 +96,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "307837323643376632303632424233644434374635416165373239373541333334424138653630466538",
-              "id": 3,
+              "id": 195,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "91:42:0",
+              "src": "91:42:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -115,27 +115,27 @@
           },
           {
             "body": {
-              "id": 12,
+              "id": 204,
               "nodeType": "Block",
-              "src": "194:43:0",
+              "src": "194:43:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 9,
+                      "id": 201,
                       "name": "mainAccount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4,
-                      "src": "211:11:0",
+                      "referencedDeclaration": 196,
+                      "src": "211:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 10,
+                    "id": 202,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -143,21 +143,21 @@
                     "memberName": "balance",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "211:19:0",
+                    "src": "211:19:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8,
-                  "id": 11,
+                  "functionReturnParameters": 200,
+                  "id": 203,
                   "nodeType": "Return",
-                  "src": "204:26:0"
+                  "src": "204:26:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 205,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -165,23 +165,23 @@
             "name": "balanceOfMain",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5,
+              "id": 197,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "162:2:0"
+              "src": "162:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8,
+              "id": 200,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7,
+                  "id": 199,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "185:7:0",
+                  "scope": 205,
+                  "src": "185:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -189,10 +189,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6,
+                    "id": 198,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:7:0",
+                    "src": "185:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -202,33 +202,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "184:9:0"
+              "src": "184:9:1"
             },
-            "scope": 14,
-            "src": "140:97:0",
+            "scope": 206,
+            "src": "140:97:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 15,
-        "src": "26:213:0"
+        "scope": 207,
+        "src": "26:213:1"
       }
     ],
-    "src": "0:240:0"
+    "src": "0:240:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
     "exportedSymbols": {
       "MainAccount": [
-        14
+        206
       ]
     },
-    "id": 15,
+    "id": 207,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 193,
         "literals": [
           "solidity",
           "^",
@@ -236,7 +236,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:0"
+        "src": "0:24:1"
       },
       {
         "baseContracts": [],
@@ -244,20 +244,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 14,
+        "id": 206,
         "linearizedBaseContracts": [
-          14
+          206
         ],
         "name": "MainAccount",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 4,
+            "id": 196,
             "name": "mainAccount",
             "nodeType": "VariableDeclaration",
-            "scope": 14,
-            "src": "53:80:0",
+            "scope": 206,
+            "src": "53:80:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -265,10 +265,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2,
+              "id": 194,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "53:7:0",
+              "src": "53:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -277,14 +277,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "307837323643376632303632424233644434374635416165373239373541333334424138653630466538",
-              "id": 3,
+              "id": 195,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "91:42:0",
+              "src": "91:42:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -296,27 +296,27 @@
           },
           {
             "body": {
-              "id": 12,
+              "id": 204,
               "nodeType": "Block",
-              "src": "194:43:0",
+              "src": "194:43:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 9,
+                      "id": 201,
                       "name": "mainAccount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4,
-                      "src": "211:11:0",
+                      "referencedDeclaration": 196,
+                      "src": "211:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 10,
+                    "id": 202,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -324,21 +324,21 @@
                     "memberName": "balance",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "211:19:0",
+                    "src": "211:19:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 8,
-                  "id": 11,
+                  "functionReturnParameters": 200,
+                  "id": 203,
                   "nodeType": "Return",
-                  "src": "204:26:0"
+                  "src": "204:26:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 205,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -346,23 +346,23 @@
             "name": "balanceOfMain",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5,
+              "id": 197,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "162:2:0"
+              "src": "162:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8,
+              "id": 200,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7,
+                  "id": 199,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "185:7:0",
+                  "scope": 205,
+                  "src": "185:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -370,10 +370,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6,
+                    "id": 198,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:7:0",
+                    "src": "185:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -383,20 +383,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "184:9:0"
+              "src": "184:9:1"
             },
-            "scope": 14,
-            "src": "140:97:0",
+            "scope": 206,
+            "src": "140:97:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 15,
-        "src": "26:213:0"
+        "scope": 207,
+        "src": "26:213:1"
       }
     ],
-    "src": "0:240:0"
+    "src": "0:240:1"
   },
   "compiler": {
     "name": "solc",
@@ -406,16 +406,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xe492c67ab5028d8f5036458e0f46e5d44a2fb5c0",
-      "transactionHash": "0xf2e6ba318efee6b0aeae219a42e3cb37651da5c5b01e2e172d461e4b24fb11db"
-    },
-    "1533889003355": {
-      "events": {},
-      "links": {},
-      "address": "0xead9bd716df23231d4d3e374b217a62f8c654c80",
-      "transactionHash": "0x576d581f6e810486adec0c24d7c38884ff32ba3957f6e89ee64937ee74e77194"
+      "address": "0xdb72ae8ec445c54f68646c70e0bc208e46c6fd7b",
+      "transactionHash": "0x92955b8de450ca90dc81b08a0bfb71594be0421c2abbb91de53b39e0741c5be4"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-16T12:31:50.796Z"
+  "updatedAt": "2018-08-16T13:04:41.575Z"
 }

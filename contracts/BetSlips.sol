@@ -1,25 +1,14 @@
 pragma solidity ^0.4.24;
 
+import './lib/Model.sol';
+
 contract BetSlips {
-    struct BetSlip {
-        address better;
-        uint amount;
-        uint odd;
-        uint betsCount;
-        mapping(uint => Bet) bets;
-    }
-
-    struct Bet {
-        uint fixtureId;
-        uint side;
-    }
-
-    mapping(uint => BetSlip) public betSlips;
+    mapping(uint => Model.BetSlip) public betSlips;
     uint public betSlipsCount;
 
     function addBetSlip(uint[] _fixtureIds, uint[] _sides, uint _amount, uint _odd) public {
         betSlipsCount++;
-        betSlips[betSlipsCount] = BetSlip(msg.sender, _amount, _odd, _fixtureIds.length);
+        betSlips[betSlipsCount] = Model.BetSlip(msg.sender, _amount, _odd, _fixtureIds.length);
         addBetsToSlip(_fixtureIds, _sides);
     }
 
@@ -40,11 +29,11 @@ contract BetSlips {
         }
 
         return (
-            betSlips[_id].better,
-            betSlips[_id].amount,
-            betSlips[_id].odd,
-            _fixtureIds,
-            _sides
+        betSlips[_id].better,
+        betSlips[_id].amount,
+        betSlips[_id].odd,
+        _fixtureIds,
+        _sides
         );
     }
 }
