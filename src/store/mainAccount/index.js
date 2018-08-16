@@ -6,6 +6,7 @@ const contract = truffleContract(MainAccount)
 
 export default {
   state: {
+    account: '',
     balance: null,
   },
   actions: {
@@ -15,15 +16,32 @@ export default {
 
       const instance = await contract.deployed()
 
-      instance.balanceOfMain
+
+      instance.getMainAccountBalance
         .call()
         .then((balance) => {
           commit('SET_MAIN_BALANCE', { balance })
         })
         .catch(e => logger(e, 'balance error'))
     },
+    async LOAD_MAIN_ACCOUNT({ commit }) {
+      contract
+        .setProvider(this.$web3.currentProvider)
+
+      const instance = await contract.deployed()
+
+      instance.mainAccount
+        .call()
+        .then((account) => {
+          commit('SET_MAIN_ACCOUNT', { account })
+        })
+        .catch(e => logger(e, 'mainAccount get error'))
+    },
   },
   mutations: {
+    SET_MAIN_ACCOUNT(state, { account }) {
+      state.account = account
+    },
     SET_MAIN_BALANCE(state, { balance }) {
       state.balance = balance
     },
@@ -31,6 +49,10 @@ export default {
   getters: {
     mainAccountBalanceEther(state) {
       return state.balance ? web3.fromWei(state.balance.toNumber(), 'ether') : null
+    },
+
+    mainAccount(state) {
+      return state.account.toLowerCase()
     },
   },
 }

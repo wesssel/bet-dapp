@@ -37,8 +37,6 @@
     },
     created() {
       this.$store.dispatch('LOAD_FIXTURES_OF_TODAY')
-    },
-    mounted() {
       this.$store.dispatch('LOAD_MAIN_ACCOUNT_BALANCE')
     },
   }

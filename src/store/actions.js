@@ -3,6 +3,12 @@ import { transformFixtures } from '../transformers/fixture'
 import { transformOdds } from '../transformers/odds'
 
 export default {
+  async LOAD_CURRENT_ACCOUNT({ commit }) {
+    const accounts = await this.$web3.eth.getAccounts()
+
+    commit('SET_CURRENT_ACCOUNT', { currentAccount: accounts[0] })
+  },
+
   LOAD_FIXTURES_OF_TODAY({ commit }) {
     const now = new Date()
 

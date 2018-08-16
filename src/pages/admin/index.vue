@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" v-if="isLoaded" key="is-loaded">
     <h1 class="title">
       Admin
     </h1>
@@ -10,6 +10,7 @@
       </li>
     </ul>
   </section>
+  <img v-else key="is-loading" src="~/assets/loading.svg" alt="loading">
 
 </template>
 
@@ -18,7 +19,22 @@
 
   export default {
     components: { BetSlip },
-    created() {
+    data() {
+      return {
+        isLoaded: false,
+      }
+    },
+    async created() {
+      await this.$store.dispatch('LOAD_MAIN_ACCOUNT')
+      await this.$store.dispatch('LOAD_CURRENT_ACCOUNT')
+
+      if (!this.$store.getters.currentUserIsMainAccount) {
+        this.$router.go(-1)
+
+        return
+      }
+
+      this.isLoaded = true
       this.$store.dispatch('LOAD_BET_SLIPS')
     },
     computed: {

@@ -48,4 +48,12 @@ export default {
   maxStakeEther(state, getters) {
     return getters.mainAccountBalanceEther / getters.totalOdds
   },
+
+  currentAccount(state) {
+    return state.currentAccount.toLowerCase()
+  },
+
+  currentUserIsMainAccount(state, getters) {
+    return getters.mainAccount === getters.currentAccount
+  },
 }

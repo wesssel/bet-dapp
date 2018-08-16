@@ -22,4 +22,8 @@ export default {
   SET_BET_AMOUNT(state, { betAmount }) {
     state.betAmount = betAmount
   },
+
+  SET_CURRENT_ACCOUNT(state, { currentAccount }) {
+    state.currentAccount = currentAccount
+  },
 }
