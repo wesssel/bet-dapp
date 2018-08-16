@@ -4,6 +4,7 @@ import { logger } from '../../utils/logger'
 import { reverseTransformBetSlip } from '../../transformers/betSlip'
 import { transformFixture } from '../../transformers/fixture'
 import { getFixturesById } from '../../utils/rest'
+import { numberToInt } from '../../utils/number'
 
 const contract = truffleContract(BetSlips)
 
@@ -24,13 +25,12 @@ export default {
         .addBetSlip(
           getters.betFixtureIds,
           getters.betSides,
-          getters.betAmount,
-          getters.totalOdds,
+          numberToInt(getters.betAmount, 10),
+          numberToInt(getters.totalOdds, 10),
           { from: accounts[0] },
         )
         .then((result) => {
-          logger(result)
-          logger(contract)
+          logger(result, 'bet success')
         })
         .catch(e => logger(e, 'push active bet error'))
     },
