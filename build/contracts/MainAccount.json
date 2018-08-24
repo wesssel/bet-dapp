@@ -21,7 +21,7 @@
       "name": "getMainAccountBalance",
       "outputs": [
         {
-          "name": "",
+          "name": "balance",
           "type": "uint256"
         }
       ],
@@ -35,7 +35,7 @@
       "name": "getMainAccount",
       "outputs": [
         {
-          "name": "",
+          "name": "account",
           "type": "address"
         }
       ],
@@ -44,24 +44,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506101c8806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820e7d89083e57aae60163424c25076f107066ed5f44f34a45414c6a0793255b4870029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820e7d89083e57aae60163424c25076f107066ed5f44f34a45414c6a0793255b4870029",
-  "sourceMap": "26:317:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:317:1;;;;;;;",
-  "deployedSourceMap": "26:317:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;251:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;53:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:80:1;;;;;;;;;;;;;;;;;;;;;;;;;;;140:105;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:105:1;;;;;;;;;;;;;;;;;;;;;;;251:90;297:7;91:42;316:18;;251:90;:::o;53:80::-;91:42;53:80;:::o;140:105::-;193:7;91:42;219:19;;;212:26;;140:105;:::o",
-  "source": "pragma solidity ^0.4.24;\n\ncontract MainAccount {\n    address constant public mainAccount = 0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1;\n\n    function getMainAccountBalance() public view returns(uint256) {\n        return mainAccount.balance;\n    }\n\n    function getMainAccount() public view returns(address) {\n        return mainAccount;\n    }\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b506101c8806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820822c833923e5e09bacc17892b29bb33d1cac2969e40a2c594bdaf6bbc338e9750029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820822c833923e5e09bacc17892b29bb33d1cac2969e40a2c594bdaf6bbc338e9750029",
+  "sourceMap": "54:568:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:568:0;;;;;;;",
+  "deployedSourceMap": "54:568:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;521:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;521:99:0;;;;;;;;;;;;;;;;;;;;;;;;;;;120:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;120:80:0;;;;;;;;;;;;;;;;;;;;;;;;;;;310:114;;8:9:-1;5:2;;;30:1;27;20:12;5:2;310:114:0;;;;;;;;;;;;;;;;;;;;;;;521:99;568:15;158:42;595:18;;521:99;:::o;120:80::-;158:42;120:80;:::o;310:114::-;364:15;158:42;398:19;;;391:26;;310:114;:::o",
+  "source": "pragma solidity ^0.4.24;\n\n/** @title Main account. */\ncontract MainAccount {\n    /** @dev Hardcoded main account */\n    address constant public mainAccount = 0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1;\n\n    /** @dev Returns balance of main account\n      * @return balance Balance of main account.\n      */\n    function getMainAccountBalance() public view returns (uint256 balance) {\n        return mainAccount.balance;\n    }\n\n    /** @dev Returns main account\n      * @return mainAccount Address main acount\n      */\n    function getMainAccount() public view returns (address account) {\n        return mainAccount;\n    }\n}\n",
   "sourcePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
   "ast": {
     "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
     "exportedSymbols": {
       "MainAccount": [
-        214
+        22
       ]
     },
-    "id": 215,
+    "id": 23,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 193,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -69,28 +69,28 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
+        "documentation": "@title Main account. ",
         "fullyImplemented": true,
-        "id": 214,
+        "id": 22,
         "linearizedBaseContracts": [
-          214
+          22
         ],
         "name": "MainAccount",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 196,
+            "id": 4,
             "name": "mainAccount",
             "nodeType": "VariableDeclaration",
-            "scope": 214,
-            "src": "53:80:1",
+            "scope": 22,
+            "src": "120:80:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -98,10 +98,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 194,
+              "id": 2,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "53:7:1",
+              "src": "120:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -110,14 +110,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "307843663331303564373732413836393636613444413633433465383664433643343737303163326431",
-              "id": 195,
+              "id": 3,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "91:42:1",
+              "src": "158:42:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -129,27 +129,27 @@
           },
           {
             "body": {
-              "id": 204,
+              "id": 12,
               "nodeType": "Block",
-              "src": "202:43:1",
+              "src": "381:43:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 201,
+                      "id": 9,
                       "name": "mainAccount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 196,
-                      "src": "219:11:1",
+                      "referencedDeclaration": 4,
+                      "src": "398:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 202,
+                    "id": 10,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -157,21 +157,21 @@
                     "memberName": "balance",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "219:19:1",
+                    "src": "398:19:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 200,
-                  "id": 203,
+                  "functionReturnParameters": 8,
+                  "id": 11,
                   "nodeType": "Return",
-                  "src": "212:26:1"
+                  "src": "391:26:0"
                 }
               ]
             },
-            "documentation": null,
-            "id": 205,
+            "documentation": "@dev Returns balance of main account\n@return balance Balance of main account.",
+            "id": 13,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -179,23 +179,23 @@
             "name": "getMainAccountBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 197,
+              "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "170:2:1"
+              "src": "340:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 200,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 199,
-                  "name": "",
+                  "id": 7,
+                  "name": "balance",
                   "nodeType": "VariableDeclaration",
-                  "scope": 205,
-                  "src": "193:7:1",
+                  "scope": 13,
+                  "src": "364:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -203,10 +203,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 198,
+                    "id": 6,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "193:7:1",
+                    "src": "364:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -216,43 +216,43 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "192:9:1"
+              "src": "363:17:0"
             },
-            "scope": 214,
-            "src": "140:105:1",
+            "scope": 22,
+            "src": "310:114:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 212,
+              "id": 20,
               "nodeType": "Block",
-              "src": "306:35:1",
+              "src": "585:35:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 210,
+                    "id": 18,
                     "name": "mainAccount",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 196,
-                    "src": "323:11:1",
+                    "referencedDeclaration": 4,
+                    "src": "602:11:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 209,
-                  "id": 211,
+                  "functionReturnParameters": 17,
+                  "id": 19,
                   "nodeType": "Return",
-                  "src": "316:18:1"
+                  "src": "595:18:0"
                 }
               ]
             },
-            "documentation": null,
-            "id": 213,
+            "documentation": "@dev Returns main account\n@return mainAccount Address main acount",
+            "id": 21,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -260,23 +260,23 @@
             "name": "getMainAccount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 206,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "274:2:1"
+              "src": "544:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 209,
+              "id": 17,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 208,
-                  "name": "",
+                  "id": 16,
+                  "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 213,
-                  "src": "297:7:1",
+                  "scope": 21,
+                  "src": "568:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -284,10 +284,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 207,
+                    "id": 15,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "297:7:1",
+                    "src": "568:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -297,33 +297,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "296:9:1"
+              "src": "567:17:0"
             },
-            "scope": 214,
-            "src": "251:90:1",
+            "scope": 22,
+            "src": "521:99:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 215,
-        "src": "26:317:1"
+        "scope": 23,
+        "src": "54:568:0"
       }
     ],
-    "src": "0:344:1"
+    "src": "0:623:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
     "exportedSymbols": {
       "MainAccount": [
-        214
+        22
       ]
     },
-    "id": 215,
+    "id": 23,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 193,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -331,28 +331,28 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
+        "documentation": "@title Main account. ",
         "fullyImplemented": true,
-        "id": 214,
+        "id": 22,
         "linearizedBaseContracts": [
-          214
+          22
         ],
         "name": "MainAccount",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 196,
+            "id": 4,
             "name": "mainAccount",
             "nodeType": "VariableDeclaration",
-            "scope": 214,
-            "src": "53:80:1",
+            "scope": 22,
+            "src": "120:80:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -360,10 +360,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 194,
+              "id": 2,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "53:7:1",
+              "src": "120:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -372,14 +372,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "307843663331303564373732413836393636613444413633433465383664433643343737303163326431",
-              "id": 195,
+              "id": 3,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "91:42:1",
+              "src": "158:42:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -391,27 +391,27 @@
           },
           {
             "body": {
-              "id": 204,
+              "id": 12,
               "nodeType": "Block",
-              "src": "202:43:1",
+              "src": "381:43:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 201,
+                      "id": 9,
                       "name": "mainAccount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 196,
-                      "src": "219:11:1",
+                      "referencedDeclaration": 4,
+                      "src": "398:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 202,
+                    "id": 10,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -419,21 +419,21 @@
                     "memberName": "balance",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "219:19:1",
+                    "src": "398:19:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 200,
-                  "id": 203,
+                  "functionReturnParameters": 8,
+                  "id": 11,
                   "nodeType": "Return",
-                  "src": "212:26:1"
+                  "src": "391:26:0"
                 }
               ]
             },
-            "documentation": null,
-            "id": 205,
+            "documentation": "@dev Returns balance of main account\n@return balance Balance of main account.",
+            "id": 13,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -441,23 +441,23 @@
             "name": "getMainAccountBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 197,
+              "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "170:2:1"
+              "src": "340:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 200,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 199,
-                  "name": "",
+                  "id": 7,
+                  "name": "balance",
                   "nodeType": "VariableDeclaration",
-                  "scope": 205,
-                  "src": "193:7:1",
+                  "scope": 13,
+                  "src": "364:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -465,10 +465,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 198,
+                    "id": 6,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "193:7:1",
+                    "src": "364:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -478,43 +478,43 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "192:9:1"
+              "src": "363:17:0"
             },
-            "scope": 214,
-            "src": "140:105:1",
+            "scope": 22,
+            "src": "310:114:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 212,
+              "id": 20,
               "nodeType": "Block",
-              "src": "306:35:1",
+              "src": "585:35:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 210,
+                    "id": 18,
                     "name": "mainAccount",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 196,
-                    "src": "323:11:1",
+                    "referencedDeclaration": 4,
+                    "src": "602:11:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 209,
-                  "id": 211,
+                  "functionReturnParameters": 17,
+                  "id": 19,
                   "nodeType": "Return",
-                  "src": "316:18:1"
+                  "src": "595:18:0"
                 }
               ]
             },
-            "documentation": null,
-            "id": 213,
+            "documentation": "@dev Returns main account\n@return mainAccount Address main acount",
+            "id": 21,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -522,23 +522,23 @@
             "name": "getMainAccount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 206,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "274:2:1"
+              "src": "544:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 209,
+              "id": 17,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 208,
-                  "name": "",
+                  "id": 16,
+                  "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 213,
-                  "src": "297:7:1",
+                  "scope": 21,
+                  "src": "568:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -546,10 +546,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 207,
+                    "id": 15,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "297:7:1",
+                    "src": "568:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -559,20 +559,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "296:9:1"
+              "src": "567:17:0"
             },
-            "scope": 214,
-            "src": "251:90:1",
+            "scope": 22,
+            "src": "521:99:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 215,
-        "src": "26:317:1"
+        "scope": 23,
+        "src": "54:568:0"
       }
     ],
-    "src": "0:344:1"
+    "src": "0:623:0"
   },
   "compiler": {
     "name": "solc",
@@ -582,10 +582,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x595ee894d24fbd7a18028704f45163365534eb9c",
-      "transactionHash": "0xdce9fed4532fde0c7fd552bff2221352800b7e3fbdb602339e0c449539503ffb"
+      "address": "0xdd0c1b3e329ccacd4a0c0c1f85fa87de614ec498",
+      "transactionHash": "0xd668b236c674bcd150c0c1b23cd053d4e1321b657046aff32b51596ae4303ce8"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-24T13:37:56.588Z"
+  "updatedAt": "2018-08-24T13:54:43.988Z"
 }
