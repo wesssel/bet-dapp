@@ -7,7 +7,7 @@ contract('MainAccount', (accounts) => {
     MainAccount
       .deployed()
       .then((instance) => {
-        assert.equal(instance.abi !== undefined, true, 'Contact abi is not deployed')
+        assert.equal(instance.abi !== undefined, true, 'MainAccount abi is not deployed')
       })
   ))
 
