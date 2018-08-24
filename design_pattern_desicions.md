@@ -76,4 +76,3 @@ I used javascript for testing the contracts. I did this for multiple reasons:
 
 Kanban board: https://github.com/wesssel/bet-dapp/projects/1
 
-## Future plans
