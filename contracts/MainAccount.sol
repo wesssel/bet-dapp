@@ -1,7 +1,7 @@
 pragma solidity ^0.4.24;
 
 contract MainAccount {
-    address constant public mainAccount = 0x726c7f2062bb3dd47f5aae72975a334ba8e60fe8;
+    address constant public mainAccount = 0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1;
 
     function getMainAccountBalance() public view returns(uint256) {
         return mainAccount.balance;

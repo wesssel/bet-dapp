@@ -44,11 +44,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506101c8806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe8905090565b73726c7f2062bb3dd47f5aae72975a334ba8e60fe881565b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe873ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a723058205cf10df9d9e1e2d78f3bf655c44f33cc91e6f4a63968b95c03c0dbaa572627200029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe8905090565b73726c7f2062bb3dd47f5aae72975a334ba8e60fe881565b600073726c7f2062bb3dd47f5aae72975a334ba8e60fe873ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a723058205cf10df9d9e1e2d78f3bf655c44f33cc91e6f4a63968b95c03c0dbaa572627200029",
+  "bytecode": "0x608060405234801561001057600080fd5b506101c8806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820e7d89083e57aae60163424c25076f107066ed5f44f34a45414c6a0793255b4870029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ca7ff3b1461005c5780631123cfe0146100b35780634c0b70f61461010a575b600080fd5b34801561006857600080fd5b50610071610135565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610151565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011657600080fd5b5061011f610169565b6040518082815260200191505060405180910390f35b600073cf3105d772a86966a4da63c4e86dc6c47701c2d1905090565b73cf3105d772a86966a4da63c4e86dc6c47701c2d181565b600073cf3105d772a86966a4da63c4e86dc6c47701c2d173ffffffffffffffffffffffffffffffffffffffff16319050905600a165627a7a72305820e7d89083e57aae60163424c25076f107066ed5f44f34a45414c6a0793255b4870029",
   "sourceMap": "26:317:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:317:1;;;;;;;",
   "deployedSourceMap": "26:317:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;251:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;53:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:80:1;;;;;;;;;;;;;;;;;;;;;;;;;;;140:105;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:105:1;;;;;;;;;;;;;;;;;;;;;;;251:90;297:7;91:42;316:18;;251:90;:::o;53:80::-;91:42;53:80;:::o;140:105::-;193:7;91:42;219:19;;;212:26;;140:105;:::o",
-  "source": "pragma solidity ^0.4.24;\n\ncontract MainAccount {\n    address constant public mainAccount = 0x726c7f2062bb3dd47f5aae72975a334ba8e60fe8;\n\n    function getMainAccountBalance() public view returns(uint256) {\n        return mainAccount.balance;\n    }\n\n    function getMainAccount() public view returns(address) {\n        return mainAccount;\n    }\n}\n",
+  "source": "pragma solidity ^0.4.24;\n\ncontract MainAccount {\n    address constant public mainAccount = 0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1;\n\n    function getMainAccountBalance() public view returns(uint256) {\n        return mainAccount.balance;\n    }\n\n    function getMainAccount() public view returns(address) {\n        return mainAccount;\n    }\n}\n",
   "sourcePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
   "ast": {
     "absolutePath": "/Users/wesselvanderpal/Project/ethereum/bet-dapp/contracts/MainAccount.sol",
@@ -109,7 +109,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "307837323663376632303632626233646434376635616165373239373561333334626138653630666538",
+              "hexValue": "307843663331303564373732413836393636613444413633433465383664433643343737303163326431",
               "id": 195,
               "isConstant": false,
               "isLValue": false,
@@ -120,10 +120,10 @@
               "src": "91:42:1",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_rational_653244502635944645245457479169362859955142922216_by_1",
-                "typeString": "int_const 6532...(40 digits omitted)...2216"
+                "typeIdentifier": "t_address",
+                "typeString": "address"
               },
-              "value": "0x726c7f2062bb3dd47f5aae72975a334ba8e60fe8"
+              "value": "0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1"
             },
             "visibility": "public"
           },
@@ -371,7 +371,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "307837323663376632303632626233646434376635616165373239373561333334626138653630666538",
+              "hexValue": "307843663331303564373732413836393636613444413633433465383664433643343737303163326431",
               "id": 195,
               "isConstant": false,
               "isLValue": false,
@@ -382,10 +382,10 @@
               "src": "91:42:1",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_rational_653244502635944645245457479169362859955142922216_by_1",
-                "typeString": "int_const 6532...(40 digits omitted)...2216"
+                "typeIdentifier": "t_address",
+                "typeString": "address"
               },
-              "value": "0x726c7f2062bb3dd47f5aae72975a334ba8e60fe8"
+              "value": "0xCf3105d772A86966a4DA63C4e86dC6C47701c2d1"
             },
             "visibility": "public"
           },
@@ -582,10 +582,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xb66324a525669669560a21c18f72780c4aa0511a",
-      "transactionHash": "0x272cecd6e8209b2381438ef079ba045d2c0c20ef757b90621158aaacec78ef05"
+      "address": "0x595ee894d24fbd7a18028704f45163365534eb9c",
+      "transactionHash": "0xdce9fed4532fde0c7fd552bff2221352800b7e3fbdb602339e0c449539503ffb"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-16T13:33:34.144Z"
+  "updatedAt": "2018-08-24T13:37:56.588Z"
 }

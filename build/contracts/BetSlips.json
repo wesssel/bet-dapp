@@ -141,7 +141,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 192,
-        "sourceUnit": 293,
+        "sourceUnit": 236,
         "src": "26:25:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -169,7 +169,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
               "typeString": "mapping(uint256 => struct Model.BetSlip)"
             },
             "typeName": {
@@ -187,7 +187,7 @@
               "nodeType": "Mapping",
               "src": "77:30:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                 "typeString": "mapping(uint256 => struct Model.BetSlip)"
               },
               "valueType": {
@@ -195,10 +195,10 @@
                 "id": 4,
                 "name": "Model.BetSlip",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 286,
+                "referencedDeclaration": 229,
                 "src": "93:13:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_BetSlip_$286_storage_ptr",
+                  "typeIdentifier": "t_struct$_BetSlip_$229_storage_ptr",
                   "typeString": "struct Model.BetSlip"
                 }
               }
@@ -291,7 +291,7 @@
                         "referencedDeclaration": 6,
                         "src": "283:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                           "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                         }
                       },
@@ -316,7 +316,7 @@
                       "nodeType": "IndexAccess",
                       "src": "283:23:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                        "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                         "typeString": "struct Model.BetSlip storage ref"
                       }
                     },
@@ -333,7 +333,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 307,
+                            "referencedDeclaration": 250,
                             "src": "323:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -435,10 +435,10 @@
                           "name": "Model",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 292,
+                          "referencedDeclaration": 235,
                           "src": "309:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Model_$292_$",
+                            "typeIdentifier": "t_type$_t_contract$_Model_$235_$",
                             "typeString": "type(library Model)"
                           }
                         },
@@ -449,10 +449,10 @@
                         "lValueRequested": false,
                         "memberName": "BetSlip",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 286,
+                        "referencedDeclaration": 229,
                         "src": "309:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_BetSlip_$286_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_BetSlip_$229_storage_ptr_$",
                           "typeString": "type(struct Model.BetSlip storage pointer)"
                         }
                       },
@@ -466,13 +466,13 @@
                       "nodeType": "FunctionCall",
                       "src": "309:60:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BetSlip_$286_memory",
+                        "typeIdentifier": "t_struct$_BetSlip_$229_memory",
                         "typeString": "struct Model.BetSlip memory"
                       }
                     },
                     "src": "283:86:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                      "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                       "typeString": "struct Model.BetSlip storage ref"
                     }
                   },
@@ -742,7 +742,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "562:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -767,7 +767,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "562:23:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -778,10 +778,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "562:28:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -806,7 +806,7 @@
                               "nodeType": "IndexAccess",
                               "src": "562:31:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -817,7 +817,7 @@
                             "lValueRequested": true,
                             "memberName": "fixtureId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 288,
+                            "referencedDeclaration": 231,
                             "src": "562:41:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -901,7 +901,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "634:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -926,7 +926,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "634:23:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -937,10 +937,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "634:28:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -965,7 +965,7 @@
                               "nodeType": "IndexAccess",
                               "src": "634:31:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -976,7 +976,7 @@
                             "lValueRequested": true,
                             "memberName": "side",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 290,
+                            "referencedDeclaration": 233,
                             "src": "634:36:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1357,7 +1357,7 @@
                             "referencedDeclaration": 6,
                             "src": "875:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -1382,7 +1382,7 @@
                           "nodeType": "IndexAccess",
                           "src": "875:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -1393,7 +1393,7 @@
                         "lValueRequested": false,
                         "memberName": "betsCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 281,
+                        "referencedDeclaration": 224,
                         "src": "875:23:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1516,7 +1516,7 @@
                             "referencedDeclaration": 6,
                             "src": "943:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -1541,7 +1541,7 @@
                           "nodeType": "IndexAccess",
                           "src": "943:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -1552,7 +1552,7 @@
                         "lValueRequested": false,
                         "memberName": "betsCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 281,
+                        "referencedDeclaration": 224,
                         "src": "943:23:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1689,7 +1689,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "1060:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -1714,7 +1714,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1060:13:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -1725,10 +1725,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "1060:18:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -1753,7 +1753,7 @@
                               "nodeType": "IndexAccess",
                               "src": "1060:21:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -1764,7 +1764,7 @@
                             "lValueRequested": false,
                             "memberName": "fixtureId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 288,
+                            "referencedDeclaration": 231,
                             "src": "1060:31:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1848,7 +1848,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "1117:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -1873,7 +1873,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1117:13:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -1884,10 +1884,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "1117:18:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -1912,7 +1912,7 @@
                               "nodeType": "IndexAccess",
                               "src": "1117:21:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -1923,7 +1923,7 @@
                             "lValueRequested": false,
                             "memberName": "side",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 290,
+                            "referencedDeclaration": 233,
                             "src": "1117:26:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1981,7 +1981,7 @@
                           "referencedDeclaration": 6,
                           "src": "999:8:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                             "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                           }
                         },
@@ -2006,7 +2006,7 @@
                         "nodeType": "IndexAccess",
                         "src": "999:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                          "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                           "typeString": "struct Model.BetSlip storage ref"
                         }
                       },
@@ -2017,7 +2017,7 @@
                       "lValueRequested": false,
                       "memberName": "betsCount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 281,
+                      "referencedDeclaration": 224,
                       "src": "999:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2139,7 +2139,7 @@
                             "referencedDeclaration": 6,
                             "src": "1181:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -2164,7 +2164,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1181:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -2175,7 +2175,7 @@
                         "lValueRequested": false,
                         "memberName": "better",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 275,
+                        "referencedDeclaration": 218,
                         "src": "1181:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2195,7 +2195,7 @@
                             "referencedDeclaration": 6,
                             "src": "1211:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -2220,7 +2220,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1211:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -2231,7 +2231,7 @@
                         "lValueRequested": false,
                         "memberName": "amount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 277,
+                        "referencedDeclaration": 220,
                         "src": "1211:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2251,7 +2251,7 @@
                             "referencedDeclaration": 6,
                             "src": "1241:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -2276,7 +2276,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1241:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -2287,7 +2287,7 @@
                         "lValueRequested": false,
                         "memberName": "odd",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 279,
+                        "referencedDeclaration": 222,
                         "src": "1241:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2580,7 +2580,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 192,
-        "sourceUnit": 293,
+        "sourceUnit": 236,
         "src": "26:25:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2608,7 +2608,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
               "typeString": "mapping(uint256 => struct Model.BetSlip)"
             },
             "typeName": {
@@ -2626,7 +2626,7 @@
               "nodeType": "Mapping",
               "src": "77:30:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                 "typeString": "mapping(uint256 => struct Model.BetSlip)"
               },
               "valueType": {
@@ -2634,10 +2634,10 @@
                 "id": 4,
                 "name": "Model.BetSlip",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 286,
+                "referencedDeclaration": 229,
                 "src": "93:13:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_BetSlip_$286_storage_ptr",
+                  "typeIdentifier": "t_struct$_BetSlip_$229_storage_ptr",
                   "typeString": "struct Model.BetSlip"
                 }
               }
@@ -2730,7 +2730,7 @@
                         "referencedDeclaration": 6,
                         "src": "283:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                           "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                         }
                       },
@@ -2755,7 +2755,7 @@
                       "nodeType": "IndexAccess",
                       "src": "283:23:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                        "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                         "typeString": "struct Model.BetSlip storage ref"
                       }
                     },
@@ -2772,7 +2772,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 307,
+                            "referencedDeclaration": 250,
                             "src": "323:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2874,10 +2874,10 @@
                           "name": "Model",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 292,
+                          "referencedDeclaration": 235,
                           "src": "309:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Model_$292_$",
+                            "typeIdentifier": "t_type$_t_contract$_Model_$235_$",
                             "typeString": "type(library Model)"
                           }
                         },
@@ -2888,10 +2888,10 @@
                         "lValueRequested": false,
                         "memberName": "BetSlip",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 286,
+                        "referencedDeclaration": 229,
                         "src": "309:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_BetSlip_$286_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_BetSlip_$229_storage_ptr_$",
                           "typeString": "type(struct Model.BetSlip storage pointer)"
                         }
                       },
@@ -2905,13 +2905,13 @@
                       "nodeType": "FunctionCall",
                       "src": "309:60:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BetSlip_$286_memory",
+                        "typeIdentifier": "t_struct$_BetSlip_$229_memory",
                         "typeString": "struct Model.BetSlip memory"
                       }
                     },
                     "src": "283:86:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                      "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                       "typeString": "struct Model.BetSlip storage ref"
                     }
                   },
@@ -3181,7 +3181,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "562:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -3206,7 +3206,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "562:23:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -3217,10 +3217,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "562:28:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -3245,7 +3245,7 @@
                               "nodeType": "IndexAccess",
                               "src": "562:31:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -3256,7 +3256,7 @@
                             "lValueRequested": true,
                             "memberName": "fixtureId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 288,
+                            "referencedDeclaration": 231,
                             "src": "562:41:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3340,7 +3340,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "634:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -3365,7 +3365,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "634:23:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -3376,10 +3376,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "634:28:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -3404,7 +3404,7 @@
                               "nodeType": "IndexAccess",
                               "src": "634:31:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -3415,7 +3415,7 @@
                             "lValueRequested": true,
                             "memberName": "side",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 290,
+                            "referencedDeclaration": 233,
                             "src": "634:36:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3796,7 +3796,7 @@
                             "referencedDeclaration": 6,
                             "src": "875:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -3821,7 +3821,7 @@
                           "nodeType": "IndexAccess",
                           "src": "875:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -3832,7 +3832,7 @@
                         "lValueRequested": false,
                         "memberName": "betsCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 281,
+                        "referencedDeclaration": 224,
                         "src": "875:23:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3955,7 +3955,7 @@
                             "referencedDeclaration": 6,
                             "src": "943:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -3980,7 +3980,7 @@
                           "nodeType": "IndexAccess",
                           "src": "943:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -3991,7 +3991,7 @@
                         "lValueRequested": false,
                         "memberName": "betsCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 281,
+                        "referencedDeclaration": 224,
                         "src": "943:23:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4128,7 +4128,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "1060:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -4153,7 +4153,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1060:13:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -4164,10 +4164,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "1060:18:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -4192,7 +4192,7 @@
                               "nodeType": "IndexAccess",
                               "src": "1060:21:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -4203,7 +4203,7 @@
                             "lValueRequested": false,
                             "memberName": "fixtureId",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 288,
+                            "referencedDeclaration": 231,
                             "src": "1060:31:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4287,7 +4287,7 @@
                                     "referencedDeclaration": 6,
                                     "src": "1117:8:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                                       "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                                     }
                                   },
@@ -4312,7 +4312,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "1117:13:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                                    "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                                     "typeString": "struct Model.BetSlip storage ref"
                                   }
                                 },
@@ -4323,10 +4323,10 @@
                                 "lValueRequested": false,
                                 "memberName": "bets",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 285,
+                                "referencedDeclaration": 228,
                                 "src": "1117:18:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$291_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Bet_$234_storage_$",
                                   "typeString": "mapping(uint256 => struct Model.Bet storage ref)"
                                 }
                               },
@@ -4351,7 +4351,7 @@
                               "nodeType": "IndexAccess",
                               "src": "1117:21:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bet_$291_storage",
+                                "typeIdentifier": "t_struct$_Bet_$234_storage",
                                 "typeString": "struct Model.Bet storage ref"
                               }
                             },
@@ -4362,7 +4362,7 @@
                             "lValueRequested": false,
                             "memberName": "side",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 290,
+                            "referencedDeclaration": 233,
                             "src": "1117:26:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4420,7 +4420,7 @@
                           "referencedDeclaration": 6,
                           "src": "999:8:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                             "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                           }
                         },
@@ -4445,7 +4445,7 @@
                         "nodeType": "IndexAccess",
                         "src": "999:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                          "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                           "typeString": "struct Model.BetSlip storage ref"
                         }
                       },
@@ -4456,7 +4456,7 @@
                       "lValueRequested": false,
                       "memberName": "betsCount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 281,
+                      "referencedDeclaration": 224,
                       "src": "999:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4578,7 +4578,7 @@
                             "referencedDeclaration": 6,
                             "src": "1181:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -4603,7 +4603,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1181:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -4614,7 +4614,7 @@
                         "lValueRequested": false,
                         "memberName": "better",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 275,
+                        "referencedDeclaration": 218,
                         "src": "1181:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4634,7 +4634,7 @@
                             "referencedDeclaration": 6,
                             "src": "1211:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -4659,7 +4659,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1211:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -4670,7 +4670,7 @@
                         "lValueRequested": false,
                         "memberName": "amount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 277,
+                        "referencedDeclaration": 220,
                         "src": "1211:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4690,7 +4690,7 @@
                             "referencedDeclaration": 6,
                             "src": "1241:8:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$286_storage_$",
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_BetSlip_$229_storage_$",
                               "typeString": "mapping(uint256 => struct Model.BetSlip storage ref)"
                             }
                           },
@@ -4715,7 +4715,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1241:13:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BetSlip_$286_storage",
+                            "typeIdentifier": "t_struct$_BetSlip_$229_storage",
                             "typeString": "struct Model.BetSlip storage ref"
                           }
                         },
@@ -4726,7 +4726,7 @@
                         "lValueRequested": false,
                         "memberName": "odd",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 279,
+                        "referencedDeclaration": 222,
                         "src": "1241:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5000,10 +5000,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xad1d84d49a68f792af147522347a1d3dce9db2e6",
-      "transactionHash": "0x0dc5d35c33e56ee5e198a3a451d523c92254c17bdceb2d461ac6fef079ae094a"
+      "address": "0x76cc58b66ce4049e2103b62bf89301f76ddc99cf",
+      "transactionHash": "0x3c018172fe0d3d819abf29e3675f930d6c0925e64df2891896c258a64ea9d999"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-16T13:33:34.148Z"
+  "updatedAt": "2018-08-24T13:37:56.592Z"
 }

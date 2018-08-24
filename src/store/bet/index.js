@@ -44,7 +44,7 @@ export default {
       const instance = await contract.deployed()
       const betSlipsCount = await instance.betSlipsCount.call()
 
-      for (let index = 0; index < betSlipsCount.toNumber() + 1; index += 1) {
+      for (let index = 0; index < betSlipsCount.toNumber(); index += 1) {
         instance
           .getBetSlip(index + 1)
           .then((result) => {
