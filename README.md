@@ -42,7 +42,7 @@ $ yarn install # npm install
 **Truffle**
 ```bash
 # migrate contracts
-$ truffle migrate
+$ truffle migrate --reset
 ```
 
 ## Run
